@@ -10,6 +10,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<meta name='impact-site-verification' value='689d18f6-455f-4f4b-ba4b-5cb67ac09275'>
+		<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+		<script type="module">
+			import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+		
+			createChat({
+				webhookUrl: 'https://n8n.tdtdev.net/webhook/b7fc452b-089c-4d99-a63b-e28aefcd6207/chat'
+			});
+		</script>
 	</head>
 	<body>
 		<Header />
